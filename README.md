@@ -48,10 +48,12 @@ Demo order: Today's Chef Anto Daily Brief.
 | 3 | Source pages opened during research | ✅ All 5 cited URLs were opened and read by the agent's web-fetch tool on 2026-10-01 |
 | 4 | `--links` reachability check from the build sandbox | ❌ Could not run: the sandbox's network blocked those domains. **Not reported as a pass.** Run it on your own computer. |
 | 5 | Checker on a deliberately bad sample | ✅ Caught it: **4/13 passed** |
+| 6 | All 5 source links opened in a real Chrome browser, 2026-10-12 | ✅ **5/5 load**, and each page title matches the story cited |
+| 7 | BLS figures re-checked on the live BLS pages, 2026-10-12 | ✅ Match: energy +16.3%, food at home +2.2%, all items +3.4% (12 months to August); South energy +15.8% |
 
 Honest notes from the run: one FAO result was from 2025, so it was dropped; two Miami pages and one CNN page could not be opened, so they were left out.
 
-**Not tested yet:** facts were not re-checked by a human; the brief has not been run on a schedule.
+**Not tested yet:** only the BLS figures were re-checked against the source (test 7); the brief has not been run on a schedule.
 
 ## Run the tests
 ```bash
